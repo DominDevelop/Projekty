@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Wiek"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/inputAge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Waga (kg)"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+                <EditText
+                    android:id="@+id/inputWeigh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:text="0 kg"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Wzrost (cm)"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+               <EditText
+                   android:id="@+id/inputGrowth"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:inputType="number"
+                   android:text="0 cm"
+                   android:singleLine="true"
+                   android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:text="Płeć"
+                   android:textAppearance="?android:attr/textAppearanceMedium" />
+
+               <RadioGroup
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_weight="0.29"
+                   android:gravity="left"
+                   android:id="@+id/radioGroup"
+                   android:weightSum="1">
+
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Menżczyzna"
+                       android:id="@+id/radioMale"
+                       android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Kobieta"
+                       android:id="@+id/radioFamle"
+                       android:textAppearance="?android:attr/textAppearanceMedium" />
+
+               </RadioGroup>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/textView2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:gravity="center"
+                   android:paddingTop="5dp"
+                   android:text="BMR"
+                   android:textAppearance="?android:attr/textAppearanceLarge" />
+
+               <TextView
+                   android:id="@+id/outputBmr"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:gravity="center"
+                   android:text="0.00"
+                   android:textAppearance="?android:attr/textAppearanceLarge" />
+
+               <TextView
+                   android:id="@+id/textView3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:paddingTop="10dp"
+                   android:text="BMI"
+                   android:textAppearance="?android:attr/textAppearanceLarge" />
+
+               <TextView
+                   android:id="@+id/outputBmi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:gravity="center"
+                   android:text="0.00"
+                   android:textAppearance="?android:attr/textAppearanceLarge" />
+
+               <TextView
+                   android:id="@+id/stanWeigh"
+                   android:text="stan wagi"
+                   android:layout_gravity="center_horizontal"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceLarge"
+                   android:layout_height="wrap_content" />
+
+           </LinearLayout>
+
+       </LinearLayout>
+   </ScrollView>
+</RelativeLayout>

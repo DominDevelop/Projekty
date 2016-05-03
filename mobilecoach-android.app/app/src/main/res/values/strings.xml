@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Mobile Coach</string>
+    <string name="app_plan">Plan</string>
+    <string name="app_training">Trening</string>
+    <string name="app_details">Detale</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="Distance">Dystans</string>
+    <string name="Speed">Prędkość</string>
+    <string name="Calories">Spalone Kalorie</string>
+    <string name="Kilogram">waga</string>
+    <string name="Activity">Aktywność</string>
+
+    <string name="viewChose">wybierz</string>
+    <string name="viewDistance">0,00 km</string>
+    <string name="viewSpeed">0,00 km/h</string>
+    <string name="viewTime">00:00:00</string>
+
+    <string name="Walking">Spacer</string>
+    <string name="Runing">Bieganie</string>
+    <string name="Swiming">Pływanie</string>
+    <string name="Bicycle">Kolarstwo</string>
+    <string name="Training">Trening</string>
+
+    <string name="Start">Start</string>
+    <string name="Stop">Stop</string>
+    <string-array name="onOff">
+        <item>Start</item>
+        <item>Stop</item>
+    </string-array>
+
+
+    <string name="GpsListner1">GPS gotowy</string>
+    <string name="GpsListner2">GPS wyszukiwanie</string>
+
+    <string-array name="list_activities">
+        <item>Bieg</item>
+        <item>Pływanie</item>
+        <item>Rower</item>
+    </string-array>
+
+    <string-array name="menu_items">
+        <item>Trening</item>
+        <item>Plan treningowy</item>
+        <item>Historia</item>
+        <item>Detale</item>
+    </string-array>
+
+    <string name="trainingWeeks">Ilość tygodni</string>
+    <string name="dialogTitle">Generuj Trening</string>
+    <string name="askLevel">Poziom wytrenowania?</string>
+    <string name="accept">generuj</string>
+    <string name="cancel">anuluj</string>
+
+    <string-array name="levels">
+        <item>Początkujący</item>
+        <item>Średnio-zaawansowany</item>
+        <item>Zaawansowany</item>
+    </string-array>
+
+    <string name="level1">Początkujący</string>
+    <string name="level2">Średnio-zaawansowany</string>
+    <string name="level3">Zaawansowany</string>
+
+    <string name="aboutApp">
+        Mobile Coach to aplikacja dla osób uprawiający triathlon.
+    </string>
+    <string name="infoApp">Informacje o aplikacji</string>
+    <string name="confirm">Potwierdź</string>
+    <string name="cinfirmDialog">Czy napewno wykonałeś dzisiajsze ćwiczenie?</string>
+    <string name="acceptTraining">potwierdzam</string>
+    <string name="cancelTraining">anuluj</string>
+
+    <string name="Monday">pn.</string>
+    <string name="Tuesday">wt.</string>
+    <string name="Wednesday">śr.</string>
+    <string name="Thursday">czw.</string>
+    <string name="Friday">pt.</string>
+    <string name="Saturday">sob.</string>
+    <string name="Sunday">niedz.</string>
+
+    <string name="minute">min</string>
+    <string name="allowTitle">Czy napewno</string>
+    <string name="allowMessage">Poczekaj, aż GPS będzię gotowy do działania aby uzyskać precyzyjne pomiary.</string>
+    <string name="allowAccept">Dalej</string>
+    <string name="allowNegative">anuluj</string>
+    <string name="Age">wiek</string>
+
+    <string name="endTrainingMessage">Czy zapisać trening?</string>
+    <string name="endTraining">Zakończono trening</string>
+    <string name="tak">TAK</string>
+    <string name="nie">anuluj</string>
+    <string name="weight">Waga</string>
+    <string name="date">Data</string>
+    <string name="app_history">Historia</string>
+    <string name="time">Czas</string>
+
+</resources>
