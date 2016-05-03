@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<security:http auto-config="true">
+	
+		<security:intercept-url pattern="/start*" access="ROLE_USER" />
+		<security:form-login login-page="/login" default-target-url="/start"
+			authentication-failure-url="/loginfailed" />
+		<security:logout logout-success-url="/logout" />
+		
+		 <security:access-denied-handler error-page="/403" />
+	</security:http>
+	
+	<!-- /welcome -->
+	<!-- 
+	    <security:intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
+        <security:intercept-url pattern="/other/**" access="isAuthenticated()" />    
+        <security:access-denied-handler error-page="/403" />
+		<security:intercept-url pattern="/userInfo" access="hasAnyRole('ROLE_USER', 'ROLE_ADMIN')" />
+        <security:intercept-url pattern="/other/**" access="isAuthenticated()" />
+	 -->
+	
+	<security:authentication-manager>
+	   <security:authentication-provider>
+		<security:jdbc-user-service data-source-ref="dataSource"
+	   		users-by-username-query=
+     		"SELECT user, password, login FROM uzytkownik WHERE user=?"
+   			authorities-by-username-query=
+     		"SELECT user, role FROM uzytkownik WHERE user =?"/>
+	   </security:authentication-provider>
+	</security:authentication-manager>
+	
+</beans>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="daoClass" class="com.daoclass.app.SerwisUzytkownik">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    
+    <bean id="daoZestaw" class="com.daoclass.app.SerwisZestaw">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    
+    <bean id="daoPlan" class="com.daoclass.app.SerwisPlan">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    
+    <bean id="daoSlownik" class="com.daoclass.app.SerwisSlownik">
+   	 	<property name="dataSource" ref="dataSource"/>
+    </bean>
+    
+    <bean id="daoLista" class="com.daoclass.app.SerwisLista">
+   	 	<property name="dataSource" ref="dataSource"/>
+    </bean>
+    
+    <bean id="daoSerwisSlow" class="com.daoclass.app.SerwisZestawSlow">
+   	 	<property name="dataSource" ref="dataSource"/>
+    </bean>
+    
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+   		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+   		<property name="url" value="jdbc:mysql://localhost:3306/springprojekt"/>
+   		<property name="username" value="root"/>
+   		<property name="password" value=""/>
+	</bean>
+	
+	<bean id="webexpressionHandler" class="org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler" />
+
+</beans>
